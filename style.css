@@ -1,0 +1,41 @@
+.text-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+h3:first-child {
+  color: pink;
+}
+#greycol {
+  color: grey;
+}
+.yellow {
+  color: yellow;
+}
+p:only-child {
+  color: red;
+}
+p:nth-last-of-type(2) {
+  color: green;
+}
+p:hover:not(p:nth-child(2)) {
+  background-color: black;
+}
+p:nth-child(2):hover,
+div div:nth-child(4):hover {
+  background-color: gray;
+}
+p:focus,
+div div:nth-child(4):focus {
+  outline: 2px solid rgb(255, 208, 0);
+}
+p:active,
+div div:nth-child(4):active {
+  transform: scale(0.98);
+}
+.text-box>p:first-child {
+    border: 2px solid #3cff00;
+}
+.text-box>p:last-child{
+    border: 2px solid #ff0000;
+}
